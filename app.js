@@ -1,16 +1,9 @@
 'use strict';
 
-
-
-
-
-
 var formEl = document.getElementById('form');
 
-// event handlers
 function handleAdd(event) {
   event.preventDefault();
-  console.log('hello');
 
   var formData = {
     name: event.target.formName.value,
@@ -26,6 +19,7 @@ function handleAdd(event) {
   localStorage.formData = JSON.stringify(formData);
   console.log(localStorage.formData);
 
+  window.location.href = 'cart.html';
 }
 
 formEl.addEventListener('submit', handleAdd);
