@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Bus Mall Checkout</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Bus Mall Checkout</title>
-</head>
+  <body>
+    <h1>Bus Mall</h1>
+    <p>
+      Please fill in your information and choose your Bus Mall product. Thank You Very Much.
+    </p>
 
-<body>
-  <h1>Bus Mall</h1>
-  <h2>Order Form</h2>
-  <p>
-    Please fill in your information and choose your Bus Mall product. Thank You Very Much.
-  </p>
-  <form action="cart.html" id="form">
-    <fieldset>
-    <label>Your Name:</label>
-    <input type="text" id="formName">
-    <label>Street:</label>
-    <input type="text" id="formStreet">
-    <label>City:</label>
-    <input type="text" id="formCity">
-    <label>State:</label>
-    <input type="text" id="formState">
-    <label>Zip Code:</label>
-    <input type="text" id="formZip">
-    <label>Phone:</label>
-    <input type="tel" id="formPhone">
 
-      <label>Choose your Product:</label>
-    <select type="text" id="formProduct">
-                    <option value="Bag">Bag</option>
-                    <option value="Banana">Banana</option>
-                    <option value="Bathroom">Bathroom</option>
-                    <option value="Boots">Boots</option>
-                    <option value="Breakfast">Breakfast</option>
-                    <option value="Bubblegum">Bubblegum</option>
-                    <option value="Chair">Chair</option>
-                    <option value="Cthulhu">Cthulhu</option>
-                    <option value="Dogduck">Dogduck</option>
-                    <option value="Dragon">Dragon</option>
-                    <option value="Pen">Pen</option>
-                    <option value="Petsweep">Petsweep</option>
-                    <option value="Scissors">Scissors</option>
-                    <option value="Shark">Shark</option>
-                    <option value="Sweep">Sweep</option>
-                    <option value="Tauntaun">Tauntaun</option>
-                    <option value="Unicorn">Unicorn</option>
-                    <option value="Usb">Usb</option>
-                    <option value="Watercan">Watercan</option>
-                    <option value="Wineglass">Wineglass</option>
-    </select>
+    <form id="form">
+      <fieldset>
+        <legend>Order Form</legend>
+          <label>Your Name:</label>
+          <input type="text" id="formName">
+          <label>Street:</label>
+          <input type="text" id="formStreet">
+          <label>City:</label>
+          <input type="text" id="formCity">
+          <label>State:</label>
+          <input type="text" id="formState">
+          <label>Zip Code:</label>
+          <input type="text" id="formZip">
+          <label>Phone:</label>
+          <input type="tel" id="formPhone">
+          <label>Choose your Product:</label>
+          <select type="text" id="formProduct">
+            <option value="Bag">Bag</option>
+            <option value="Banana">Banana</option>
+            <option value="Bathroom">Bathroom</option>
+            <option value="Boots">Boots</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Bubblegum">Bubblegum</option>
+            <option value="Chair">Chair</option>
+            <option value="Cthulhu">Cthulhu</option>
+            <option value="Dogduck">Dogduck</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Pen">Pen</option>
+            <option value="Petsweep">Petsweep</option>
+            <option value="Scissors">Scissors</option>
+            <option value="Shark">Shark</option>
+            <option value="Sweep">Sweep</option>
+            <option value="Tauntaun">Tauntaun</option>
+            <option value="Unicorn">Unicorn</option>
+            <option value="Usb">Usb</option>
+            <option value="Watercan">Watercan</option>
+            <option value="Wineglass">Wineglass</option>
+        </select>
+        <label>Quantity:</label>
+        <input type="number" id="formQuantity">
+        <label>Credit Card:</label>
+        <input type="text" id="formCC">
 
-    <label>Quantity:</label>
-    <input type="number" id="formQuantity">
+        <input type="submit" id="add" value="Add to Cart">
+      </fieldset>
+  </form>
 
-    <label>Credit Card:</label>
-    <input type="text" id="formCC">
-
-    <input type="submit" id="add" value="Add to Cart">
-    <!--This needs to clear from and send to cart.html-->
-    </fieldset>
-</form>
-<script src="app.js" ></script>
-
-    </body>
-
+  <script src="app.js" ></script>
+  </body>
 </html>
