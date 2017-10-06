@@ -16,8 +16,8 @@ function handleAdd(event) {
     quantity: event.target.formQuantity.value,
     cc: event.target.formCC.value,
   };
-  localStorage.formData = JSON.stringify(formData);
-  console.log(localStorage.formData);
+  // localStorage.formData = JSON.stringify(formData);
+  localStorage.setItem('data', JSON.stringify(formData));
 
   window.location.href = 'cart.html';
 }

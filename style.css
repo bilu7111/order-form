@@ -15,10 +15,10 @@ fieldset {
 form input {
   display: block;
   width: 300px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 form select {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
