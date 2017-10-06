@@ -1,6 +1,13 @@
 'use strict';
 
-localStorage.formData = document.getElementById('ordered');
+var formData = JSON.parse(localStorage.getItem('data'));
+console.log(formData);
+
+var ulEl = document.getElementById('ordered');
+
+var liEl = document.createElement('li');
+liEl.textContent = formData.product + '  >>img here<<   >>delete button here<<' ;
+ulEl.appendChild(liEl);
 
 // new Busmall ('Bag', 'img/bag.jpg', 'bag');
 // new Busmall ('Banana', 'img/banana.jpg', 'banana');
@@ -22,11 +29,3 @@ localStorage.formData = document.getElementById('ordered');
 // new Busmall ('Usb', 'img/usb.gif', 'usb');
 // new Busmall ('Watercan', 'img/water-can.jpg', 'watercan');
 // new Busmall ('Wineglass', 'img/wine-glass.jpg', 'wineglass');
-
-
-var stuff =
-  localStorage.formData = JSON.parse(formData);
-  console.log(localStorage.formData);
-
-  //   // text content thing here
-  //   // concate image soure and append
