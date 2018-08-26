@@ -17,19 +17,19 @@
       <fieldset>
         <legend>Order Form</legend>
           <label>Your Name:</label>
-          <input type="text" id="formName">
+          <input type="text" id="formName" required>
           <label>Street:</label>
-          <input type="text" id="formStreet">
+          <input type="text" id="formStreet" required>
           <label>City:</label>
-          <input type="text" id="formCity">
+          <input type="text" id="formCity" required >
           <label>State:</label>
-          <input type="text" id="formState">
+          <input type="text" id="formState" required>
           <label>Zip Code:</label>
-          <input type="text" id="formZip">
+          <input type="text" id="formZip" required>
           <label>Phone:</label>
-          <input type="tel" id="formPhone">
+          <input type="tel" id="formPhone" required>
           <label>Choose your Product:</label>
-          <select type="text" id="formProduct">
+          <select type="text" id="formProduct" required>
             <option value="Bag">Bag</option>
             <option value="Banana">Banana</option>
             <option value="Bathroom">Bathroom</option>
@@ -52,7 +52,7 @@
             <option value="Wineglass">Wineglass</option>
         </select>
         <label>Quantity:</label>
-        <input type="number" id="formQuantity">
+        <input type="number" id="formQuantity" min=0>
         <label>Credit Card:</label>
         <input type="text" id="formCC">
 
